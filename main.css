@@ -121,6 +121,7 @@ h2 {
 
 #ListContainer1{
 margin-left: 1000px;
+text-decoration:none;
 }
     
 #Tableofinfo{
@@ -132,10 +133,11 @@ margin-left: 1000px;
     text-align: center;
     filter: opacity(40%);
     margin-left: 25%;
-    margin-top: -30%;
+    margin-top: 0%;
     position:absolute;
     font-family:Arial, Helvetica, sans-serif;
     font-size:25px;
+    float:right;
     
     
     
@@ -154,6 +156,7 @@ margin-left: 1000px;
     flex-wrap: wrap;
     padding: 0 4px;
     z-index:+2;
+    
 }
 
 
