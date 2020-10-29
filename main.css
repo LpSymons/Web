@@ -58,21 +58,7 @@ top: 38px;
 left: 16px;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#banner{
-    width: 100%;
-    display: block;
-}
-#banner img {
-    width: 100%;
-    height: 93%;
-    display: block;
-    position: absolute;
-    top: 60px;
-    filter: brightness(50%);
-    z-index:-1
-    
-    
-}
+
 
 #Cog  {
     width: 50px;
@@ -85,78 +71,6 @@ z-index: +1;
 top: 0px;
 position: absolute;
 
-}
-
-h2 {
-    background-color: #ff0808;
-    color: #ffffff;
-  }
-  #PrettyWords{
-    color: cornflowerblue;
-}
-#ImageContainer{
-    width: 300px;
-    height: 300px;
-    position: relative;
-}
-#imageID1{
-    width: 100%;
-    height: 100%;
-}
-
-#Pageheader{
-    text-align: end;
-}
-
-#TableContainer {
-    margin-top: 600px;
-    margin-left: 500px;
-    text-decoration:none;
-    font-size:50px;
-    z-index:+4;
-    position:absolute;
-
-    
-}
-
-#ListContainer1{
-margin-left: 1000px;
-text-decoration:none;
-}
-    
-#Tableofinfo{
-    font-family: fantasy;
-    background-color: lightgray;
-    background-repeat: no-repeat;
-    width: 25%;
-    background-size: 300px 100px;
-    text-align: center;
-    filter: opacity(40%);
-    margin-left: 25%;
-    margin-top: 0%;
-    position:absolute;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:25px;
-    float:right;
-    
-    
-    
-}
-
-#Grid{
-    text-align: center;
-    font-size: 40px;
-    font-family: monospace;
-    background-color: lightgrey;
-    filter: opacity(40%);
-    width: 70%;
-    background-size: 0% 0 200% 0;
-    margin-left: 15%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    z-index:+2;
-    
 }
 
 
@@ -173,17 +87,6 @@ text-decoration:none;
     
 }
 
-.carousel-inner{
-    height: 15cm;
-    width: 60cm;
-}
 
-.carousel-inner img{
-    height: 15m;
-    width: 60cm;
-    object-position: center;
-    padding-left: 8cm;
-    
-}
 
 
