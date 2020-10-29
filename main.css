@@ -172,3 +172,18 @@ text-decoration:none;
    
     
 }
+
+.carousel-inner{
+    height: 15cm;
+    width: 60cm;
+}
+
+.carousel-inner img{
+    height: 15m;
+    width: 60cm;
+    object-position: center;
+    padding-left: 8cm;
+    
+}
+
+
