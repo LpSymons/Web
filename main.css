@@ -3,32 +3,37 @@ body {
     padding: 0%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#Nav {
-background-color:white;
-color: white;
-list-style: none;
-text-align: center;
-padding: 20px 0 0px 0;
-text-transform: uppercase;
+
+#nav {
+    background-color: white;
+    color: white;
+    list-style: none;
+    text-align: center;
+    padding: 20px 0 0px 0;
+    text-transform: uppercase;
+    position: fixed; /* Make it stick/fixed */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
-#Nav li  {
+
+#nav li {
     display: inline-block;
     padding-right: 100px;
     font-size: 12px;
-    
 }
-#Nav li >a {
-    text-decoration:none ;
+
+#nav li>a {
+    text-decoration: none;
     color: black;
     font-weight: 400;
     position: relative;
-
 }
-#Nav li >a:hover{
+
+#nav li>a:hover {
     color: #c1c1c1;
-
 }
-#Nav li >a::before {
+
+#nav li>a::before {
     content: '';
     display: block;
     height: 5px;
@@ -38,39 +43,40 @@ text-transform: uppercase;
     top: -10px;
     transition: all ease-in-out 250ms
 }
-#Nav li >a:hover::before{
+
+#nav li>a:hover::before {
     width: 100%;
 }
-#logo{
-    color:black;
+
+#logo {
+    color: black;
     float: left;
     font-size: 16px;
     font-weight: bold;
     vertical-align: top;
     text-align: left
-    
-}
-#logo >a {
-text-decoration: none;
-color:white;
-position: absolute;
-top: 38px;
-left: 16px;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#logo>a {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 38px;
+    left: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-#Cog  {
+#Cog {
     width: 50px;
     display: block;
 }
-#Cog img {
-height: 60px;
-width: 60px;
-z-index: +1;
-top: 0px;
-position: absolute;
 
+#Cog img {
+    height: 60px;
+    width: 60px;
+    z-index: +1;
+    top: 0px;
+    position: absolute;
 }
 
 .title {
@@ -78,33 +84,74 @@ position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+    font-size: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding-top: 7cm;
+}
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 7cm;
+}
 
+.rounded  {
+    height: 239px;
+    width: 239px;
+    z-index: -1;
+}
 
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+.rounded float-right {
+    width: 20%;
+    height: auto;
+}
 
+.mtbintro{
 
+    text-align: center;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-  
+.mtbshops{
 
+    text-align: left;
+    font-size: 50px;
+    color: purple;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.exebutton{
+    align-content: center;
+}
+
+.backroundlanding{
+    height: 800px;
+    width: fit-content;
+    filter: grayscale(50%);
+    opacity: 50%;
+    padding-top: 60px;
+    z-index: -1;
+    position: absolute;
+}
+
+.lander {
+    background-color: lightblue;
+    width: 200px;
+    padding: 25px;
+    border: 25px solid navy;
+}
 
 .footer-small {
     background-color: white;
-    position: absolute;
+    margin-top: 20px;
     bottom: 0;
     left: 0;
     right: 0;
-    
-   
-    
 }
-
-
-
-
