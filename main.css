@@ -1,3 +1,42 @@
+
+
+@media (max-width: 1920px){
+    .row{
+        padding-left: 50px;
+        padding-right: auto;
+    }
+}
+@media (max-width: 768px){
+    .display-4{
+        font-size: 200%;
+    }
+    .content-responsive{
+        width: 200px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    br{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 816px){
+    .display-4{
+        font-size: 200%;
+    }
+    .row{
+        padding-left: 50px;
+        padding-right: auto;
+    }
+    
+}
+@media (max-width: 576px){
+    .row{
+        padding-left: 10%;
+    }
+    
+}
 body {
     margin: 0%;
     padding: 0%;
@@ -14,6 +53,7 @@ body {
     position: fixed; /* Make it stick/fixed */
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: +2;
 }
 
 #nav li {
@@ -117,11 +157,12 @@ body {
     text-align: center;
     font-size: 40px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-content: center;
 }
 
 .mtbshops{
 
-    text-align: left;
+    
     font-size: 50px;
     color: purple;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -143,15 +184,107 @@ body {
 
 .lander {
     background-color: lightblue;
-    width: 200px;
+    width: auto;
     padding: 25px;
     border: 25px solid navy;
 }
 
-.footer-small {
-    background-color: white;
-    margin-top: 20px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.mtbshops{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
 }
+
+.carousel-inner img  {
+    width: 100%;
+    height: 60%;
+}
+   
+.container-fluid {
+padding-bottom: 10rem;
+}
+
+
+.footer-container {
+    background: #212329;
+    background-size: cover;
+    padding: 3rem 0 2rem 0;
+    
+}
+.footer {
+width: 80%;
+height: 25vh;
+background: #212329;
+color: #fff;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0 auto;
+padding-bottom: 5cm;
+
+
+}
+
+.footer-heading{
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+
+}
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+
+}
+
+.footer-heading a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover {
+    color: grey;
+    transition: 0.3 ease-in-out;
+}
+
+.footer-email-form h2{
+    margin-bottom: 2rem;
+}
+
+#footer-email {
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding :left 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+
+    color: #b1b1b1;
+}
+
+#footer-email-btn{
+
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background: #f9423d;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#footer-email.btn:hover {
+
+    cursor: pointer;
+    background-color: skyblue;
+    transition: all 0.4s ease-out;
+}
+
+
