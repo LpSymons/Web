@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar-fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
 </head>
 
 <body>
@@ -176,7 +182,6 @@
         </div>
         <div class="footer-heading footer-3">
             <h2>About us </h2>
-        
             <a href="A">© Copyright - mtbcornwall.co.uk</a>
         </div>
         <div class="footer-email-form">

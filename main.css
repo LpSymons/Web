@@ -54,6 +54,7 @@ body {
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
     z-index: +2;
+    position: fixed;
 }
 
 #nav li {
@@ -286,5 +287,30 @@ padding-bottom: 5cm;
     background-color: skyblue;
     transition: all 0.4s ease-out;
 }
+
+@media screen and (max-width: 1150px) {
+    .footer {
+        height: 50vh;
+    }
+    .footer-email-form {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .footer {
+        padding-top: 2rem;
+    }
+    
+}
+@media screen and (max-width: 720px) {
+    .footer-2 {
+        display: none;
+    }
+    .footer-email-form {
+        margin-top: 2rem;
+    }
+}
+
 
 
