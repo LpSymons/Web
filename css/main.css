@@ -334,18 +334,22 @@ padding-bottom: 5cm;
 
 
   .gallerytest{
-      margin: 10px 50px;
+      margin: 10px, 50px
+      
       
   }
 
   .gallerytest img {
       transition: 1s;
       padding: 15px;
-      width: 300px;
+      width: 310px;
       height: 230px;
+      
       
   }
   .gallerytest img:hover {
       filter: grayscale(100%);
       transform:scale(1.1) ;
   }
+  
+  
