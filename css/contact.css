@@ -130,6 +130,8 @@
    justify-content: center;
    align-items: center;
    flex-direction: column; 
+   background: url(../Images/landingpagepic.jpg);
+   background-size: cover;
 }
 
 .contact .content 
@@ -142,13 +144,13 @@
 {
     font-size: 36px;
     font-weight: 500;
-    color: grey;
+    color:#fff;
 }
 
 .contact .content p
 {
     font-weight: 300;
-    color: gray
+    color: #fff;
 }
 
 .container 
@@ -178,7 +180,7 @@
 {
     min-width: 60px;
     height: 60px;
-    background: blue;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,7 +193,7 @@
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: blue;
+    color:#fff;
     flex-direction: column;
     font-weight: 300;
 }
@@ -206,7 +208,7 @@
 {
     width: 40%;
     padding: 40px;
-    background:red;
+    background: #fff;
 }
 
 .contactForm h2 
@@ -223,8 +225,8 @@
     margin-top: 10px;
 }
 
-.contactForm .inputBox input
-.contactForm .inputBox.textarea
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
 {
     width: 100%;
     padding: 5px 0;
@@ -248,14 +250,14 @@
     color: #666;
 }
 
-.contactForm .inputBox input:focus ~ span 
-.contactForm .inputBox input:valid ~ span 
-.contactForm .inputBox input:textarea:focus ~ span
-.contactForm .inputBox input:textarea:valid ~ span  
+.contactForm .inputBox input:focus ~ span, 
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span  
 {
     color: #e91e63;
     font-size: 12px;
-    transform: translate(-20px);
+    transform: translateY(-20px);
 }
 
 .contactForm .inputBox input[type="submit"]
@@ -279,12 +281,13 @@
     {
         flex-direction: column;
     }
-    .container .contactInfo,
-    .contactForm
+    .container .contactInfo
+    
     {
         margin-bottom: 40px;
     }
-    .container .contactInfo
+    .container .contactInfo,
+    .contactForm
     {
         width: 100%;
     }
