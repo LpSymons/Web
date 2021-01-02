@@ -38,12 +38,13 @@
     background-color: black;
     position: absolute;
     top: -10px;
-    transition: all ease-in-out 250ms
+    transition: all ease-in-out 250ms;
 }
 
 #nav li>a:hover::before {
     width: 100%;
 }
+
 
 #logo {
     color: black;
@@ -51,7 +52,7 @@
     font-size: 16px;
     font-weight: bold;
     vertical-align: top;
-    text-align: left
+    text-align: left;
 }
 
 #logo>a {
@@ -76,9 +77,35 @@
     position: absolute;
 }
 
+@media (max-width: 768px){
+    .contact-img{
+        display: none !important;
+    }
+    .inner-section {
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        height: auto;
+        justify-self: center;
+        padding: 0;
+        float: none !important;
+        
+    }
+}
+ 
+.contact-img img{
+    background-repeat: no-repeat;
+    overflow: hidden;
+    max-width: 50%;
+    max-height: auto;
+    position: relative;
+    object-fit: contain;
+    
+    
+}
+
 .about{
-    background: url(../Images/landingpagepic.jpg) no-repeat left;
-    background-size: 55%;
+    justify-content: center;
     background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
@@ -88,7 +115,8 @@
     float: right;
     background-color: #fdfdfd;
     padding: 140px;
-    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+    display: inline;
+    
 }
 .inner-section h1{
     margin-bottom: 30px;

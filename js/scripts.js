@@ -1,35 +1,31 @@
 window.onscroll = function() {scrollFunction()};
-
+//Scroll function to follow page
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("nav").style.top = "0";
   } else {
-    document.getElementById("nav").style.top = "-50px";
+    document.getElementById("nav").style.top = "0px";
   }
 }
 
-const navSlide= () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links li');
-  //toggle nav 
+var navbar = document.querySelector(".navbar")
+var ham = document.querySelector(".ham")
 
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-
-      //animate links
-  navLinks.forEach((link, index) => {
-    if (link.style.animation) {
-      link.style.animation = ''
-    }
-    else {
-      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.5 }s`;
-    }
-  });
-  //burger animation 
-  burger.classList.toggle('toggle');
-  });
-
+// toggles hamburger menu in and out when clicking on the hamburger
+function toggleHamburger(){
+  navbar.classList.toggle("showNav")
+  ham.classList.toggle("showClose")
 }
 
-navSlide();
+ham.addEventListener("click", toggleHamburger)
+
+// toggle when clicking on links
+
+//Click event for burger
+var menuLinks = document.querySelectorAll(".menuLink")
+menuLinks.forEach( 
+  function(menuLink) { 
+    menuLink.addEventListener("click", toggleHamburger) 
+  }
+)
+

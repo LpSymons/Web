@@ -45,6 +45,18 @@
     width: 100%;
 }
 
+@media (max-width: 768px){
+    .video-container{
+        display: none !important;
+    }
+}
+
+.col-md-3{
+    z-index: -1;
+}
+
+
+
 #logo {
     color: black;
     float: left;
