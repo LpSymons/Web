@@ -113,6 +113,9 @@
     position: absolute;
 }
 
+.navbar{
+    z-index: 1;
+}
 
 
 .contact
